@@ -14,7 +14,10 @@ const images = [
 ];
 
 const galleryList = document.querySelector(".gallery");
-galleryList.classList.add();
+
+galleryList.style.display = "flex";
+galleryList.style.justifyContent = "space-around";
+galleryList.style.alignItems = "baseline";
 
 const markup = images
   .map(
@@ -23,9 +26,3 @@ const markup = images
   .join("");
 
 galleryList.insertAdjacentHTML("beforeend", markup);
-
-// const button = document.querySelector(".btn");
-
-// button.style.backgroundColor = "teal";
-// button.style.fontSize = "24px";
-// button.style.textAlign = "center";

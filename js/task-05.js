@@ -7,5 +7,5 @@ inputName.addEventListener("input", onChangeName);
 
 function onChangeName() {
   outputName.textContent =
-    inputName.value === "" ? `Anonymous` : `${inputName.value}`;
+    inputName.value === "" ? `Anonymous` : `${inputName.value.trim()}`;
 }
