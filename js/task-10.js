@@ -12,7 +12,7 @@ destroyBtn.addEventListener(`click`, () => {
 
 function onCreateBtn() {
   let array = [];
-  let boxSize = 10;
+  let boxSize = 30;
 
   for (let i = 1; i <= Number(inputNum.value); i += 1) {
     boxSize += 10;
